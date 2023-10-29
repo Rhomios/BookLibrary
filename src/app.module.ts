@@ -8,6 +8,8 @@ import {Book} from "./items/books/books.model";
 import {Language} from "./items/languages/languages.model";
 import {LanguagesModule} from "./items/languages/languages.module";
 import {BooksModule} from "./items/books/books.module";
+import {BookLocalInfo} from "./items/books/bookInfo.model";
+import {BookImage} from "./items/books/book-images.model";
 
 @Module({
   imports: [
@@ -21,7 +23,7 @@ import {BooksModule} from "./items/books/books.module";
           username: process.env.POSTGRES_USER,
           password: process.env.POSTGRES_PASSWORD,
           database: process.env.POSTGRES_DB,
-          models: [Language, Book, ],
+          models: [Language, Book, BookLocalInfo, BookImage],
           autoLoadModels: true
       }),
       LanguagesModule,

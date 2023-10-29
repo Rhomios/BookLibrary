@@ -1,4 +1,5 @@
 import {Column, DataType, Model, Table} from "sequelize-typescript";
+import {HasMany} from "sequelize";
 
 interface LanguageCreationAttributes {
     code: string;
