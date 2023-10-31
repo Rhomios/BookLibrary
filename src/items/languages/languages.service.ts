@@ -9,6 +9,7 @@ export class LanguagesService {
     constructor(@InjectModel(Language) private LanguageRepository: typeof Language) {
     }
     async add(dto: AddLanguageDto) {
+        console.log(dto)
         const lng = await this.LanguageRepository.create(dto);
         return lng;
     }

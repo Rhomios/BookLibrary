@@ -1,7 +1,7 @@
 import {BelongsTo, Column, DataType, ForeignKey, HasMany, Model, Table} from "sequelize-typescript";
 import {Language} from "../languages/languages.model";
-import {Book} from "./books.model";
 import {BookImage} from "./book-images.model";
+import {Book} from "../books/books.model";
 
 interface BookInfoCreationAttributes {
     bookId: number,

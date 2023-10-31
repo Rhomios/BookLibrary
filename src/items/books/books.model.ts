@@ -1,5 +1,5 @@
 import {HasMany, Column, DataType, Model, Table} from "sequelize-typescript";
-import {BookLocalInfo} from "./bookInfo.model";
+import {BookLocalInfo} from "../book-infos/bookInfo.model";
 
 interface BookCreationAttributes {
 

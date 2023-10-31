@@ -4,3 +4,4 @@ export class AddLocalDto {
     readonly description: string;
     readonly languageId: number;
 }
+

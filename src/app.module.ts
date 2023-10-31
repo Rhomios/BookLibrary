@@ -8,8 +8,8 @@ import {Book} from "./items/books/books.model";
 import {Language} from "./items/languages/languages.model";
 import {LanguagesModule} from "./items/languages/languages.module";
 import {BooksModule} from "./items/books/books.module";
-import {BookLocalInfo} from "./items/books/bookInfo.model";
-import {BookImage} from "./items/books/book-images.model";
+import {BookLocalInfo} from "./items/book-infos/bookInfo.model";
+import {BookImage} from "./items/book-infos/book-images.model";
 
 @Module({
   imports: [

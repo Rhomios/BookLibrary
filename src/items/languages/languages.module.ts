@@ -8,6 +8,9 @@ import {Language} from "./languages.model";
     providers: [LanguagesService],
     imports: [
         SequelizeModule.forFeature([Language])
+    ],
+    exports: [
+        LanguagesService
     ]
 })
 export class LanguagesModule {}
