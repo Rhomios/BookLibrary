@@ -4,12 +4,12 @@ import { AppService } from './app.service';
 import {ConfigModule} from "@nestjs/config";
 import * as process from "process";
 import { SequelizeModule } from '@nestjs/sequelize';
-import {Book} from "./items/books/books.model";
 import {Language} from "./items/languages/languages.model";
 import {LanguagesModule} from "./items/languages/languages.module";
 import {BooksModule} from "./items/books/books.module";
-import {BookLocalInfo} from "./items/book-infos/bookInfo.model";
-import {BookImage} from "./items/book-infos/book-images.model";
+import {Book} from "./items/books/models/books.model";
+import {BookLocalInfo} from "./items/books/models/bookInfo.model";
+import {BookImage} from "./items/books/models/book-images.model";
 
 @Module({
   imports: [
