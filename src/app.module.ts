@@ -14,7 +14,7 @@ import {BookImage} from "./items/books/models/book-images.model";
 @Module({
   imports: [
       ConfigModule.forRoot({
-        envFilePath: '.env'
+        envFilePath: '.${process.env.NODE_ENV}.env'
       }),
       SequelizeModule.forRoot({
           dialect: 'postgres',
